@@ -27,19 +27,23 @@
  | Protein-coding genes | 86 |
  | tRNA genes | 41 |
  | rRNA genes | 8 |
- 
- **Notable features:**
-- Typical quadripartite circular structure: LSC–IRa–SSC–IRb
-- Ginkgo biloba is a gymnosperm "living fossil," sister to cycads
-- IR regions are shorter (~17,732 bp each) than in most flowering plants — 
-  caused by partial ycf2 gene loss
-- rps12 is trans-spliced: 5' exon in LSC, 3' exons in IR
-- ~15 genes contain introns; rps12, clpP, and ycf3 each have 2 introns
-- No confirmed pseudogenes in MN443423.1; rpl23 reported as pseudogene 
-  in other Ginkgo accessions
-- Genes in IR are duplicated: all 4 rRNA genes, ndhB, rps7
-- GC content varies by region: IR > LSC > SSC
-
+ | Genes with introns | ~15 | GenBank feature analysis |
+ | Pseudogenes | None confirmed |
+ | Duplicated genes | 14 (in IR regions) | 
+### Notable Features
+ - Typical quadripartite circular structure: LSC–IRa–SSC–IRb
+ - *Ginkgo biloba* is a gymnosperm "living fossil," sister to cycads
+ - IR regions are shorter (~17,732 bp each) than in most flowering plants —
+   caused by partial *ycf2* loss; *ycf2* exists as a single copy only
+ - ***rps12* is trans-spliced**: 5' exon in LSC, 3' exons in IR
+ - 3 genes have **2 introns**: *rps12, clpP, ycf3*
+ - Genes with single introns: *atpF, rpoC1, petB, petD, ndhB, trnK-UUU, trnL-UAA, trnV-UAC*
+ - **14 genes duplicated** in IR:
+   - rRNA: *rrn16, rrn23, rrn4.5, rrn5*
+   - Protein-coding: *rps7, ndhB, rps12* (partial)
+   - tRNA: *trnA-UGC, trnI-GAU, trnL-CAA, trnN-GUU, trnR-ACG, trnV-GAC*
+ - No confirmed pseudogenes in MN443423.1
+ - GC pattern: IR > LSC > SSC
  ---
 
 ## Genome Structure
