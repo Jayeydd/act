@@ -46,10 +46,72 @@
  - GC pattern: IR > LSC > SSC
  ---
 
-## Genome Structure
-- LSC: ~99,296 bp
-- IRa & IRb: ~17,790 bp each
-- SSC: ~22,114 bp
+## Galaxy Workflow
+
+**Account:** https://usegalaxy.org/u/suan_jade/h/plastid-ginkgo-suan
+**History Name:** Plastid_Ginkgo_Suan
+**Date:** 2026-09-30
+
+---
+
+### Step 1 — Download Sequence from NCBI
+1. Go to: https://www.ncbi.nlm.nih.gov/nuccore/MN443423.1
+2. Click **FASTA** tab → Download → Save as:
+   `Ginkgo_biloba_MN443423.1.fasta`
+
+### Step 2 — Log In & Create History
+1. Sign in to https://usegalaxy.org
+2. Click **+ New History** → Name it:
+   `Plastid_Ginkgo_Suan`
+
+### Step 3 — Upload FASTA File
+1. Click **Upload Data** 
+2. Click **Choose Local File**
+3. Click **Start** → wait until dataset turns **green** 
+4. Rename dataset (pencil icon):
+   `Ginkgo_biloba_MN443423.1_plastome`
+
+### Step 4 — Run Fasta Statistics
+1. In left tool panel search box, type: `Fasta Statistics`
+2. Select **Fasta Statistics display summary statistics**
+3. Input FASTA file: → select your uploaded dataset
+4. Click **Run Tool** 
+5. New dataset appears: `Fasta Statistics on dataset 1: summary stats`
+
+### Step 5 — View & Record Results
+From the **Preview** panel:
+| Metric | Value |
+|---|---|
+| Total length | 156,990 bp |
+| Number of sequences | 1 |
+| GC content | 39.56% |
+| Scaffold num_A | 46,855 |
+| Scaffold num_T | 48,032 |
+| Scaffold num_C | 31,611 |
+| Scaffold num_G | 30,492 |
+| Scaffold num_N | 0 |
+
+### Step 6 — Save Screenshot
+- Capture full screen showing:
+  - History name: `Plastid_Ginkgo_Suan`
+  - Renamed FASTA file 
+  - Fasta Statistics results table 
+- Save as: `galaxy_stats_MN443423.1.jpg` → place in `figures/` folder
+
+### Step 7 — Verify
+-  Length matches NCBI: 156,990 bp
+-  Single record = complete genome (not fragmented)
+-  N = 0 = high-quality sequence
+-  GC = 39.56% consistent with land-plant plastomes
+
+---
+
+### Reproducibility
+1. Download FASTA from MN443423.1 NCBI page
+2. Create history named `Plastid_Ginkgo_Suan`
+3. Upload FASTA → run **Fasta Statistics**
+4. Results will match: 156,990 bp, GC 39.56%, N = 0
+
 
 ## Methods
 - Downloaded FASTA & GenBank files from NCBI GenBank
