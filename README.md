@@ -1,4 +1,4 @@
-# Plastid Genome Characterization: Ginkgo biloba
+# Plastid Genome Characterization: *Ginkgo biloba*
 
 **Student:** Jade Angela Suan
 
