@@ -106,6 +106,28 @@ From the **Preview** panel:
 
 ---
 
+## Gene Content Overview
+
+| Functional Group | Genes Present |
+|---|---|
+| Photosystem I (psa) | psaA, psaB, psaC, psaI, psaJ, ycf3, ycf4 (7) |
+| Photosystem II (psb) | psbA, psbB, psbC, psbD, psbE, psbF, psbH, psbI, psbJ, psbK, psbL, psbM, psbN, psbT, psbZ (15) |
+| ATP synthase (atp) | atpA, atpB, atpE, atpF, atpH, atpI (6) |
+| Cytochrome b₆/f complex (pet) | petA, petB, petD, petG, petL, petN (6) |
+| Carbon fixation | rbcL (present) |
+| NADH dehydrogenase (ndh) | ndhA, ndhB, ndhC, ndhD, ndhE, ndhF, ndhG, ndhH, ndhI, ndhJ, ndhK (11) |
+| RNA polymerase (rpo) | rpoA, rpoB, rpoC1, rpoC2 (4) |
+| Ribosomal proteins (rpl) | rpl2, rpl14, rpl16, rpl20, rpl22, rpl32, rpl33, rpl36 (8) |
+| Ribosomal proteins (rps) | rps2, rps3, rps4, rps7, rps8, rps11, rps12, rps14, rps15, rps16, rps18, rps19 (12) |
+| rRNA (rrn) | rrn16, rrn23, rrn4.5S, rrn5S — 2 copies each in IR = 8 total |
+| tRNA (trn) | 41 total; trnK-UUU, trnL-UAA, trnV-UAC contain introns; 6 duplicated in IR |
+| Other genes | matK, clpP, accD, cemA, ycf1, ycf2 (single copy only) |
+
+- rps12 is trans-spliced (exon 1 in LSC; exons 2–3 in IR)
+- clpP and ycf3 each have 2 introns
+- No confirmed pseudogenes in MN443423.1
+- ycf2 present as single copy — IR shorter than in most angiosperms
+
 ### Reproducibility
 1. Download FASTA from MN443423.1 NCBI page
 2. Create history named `Plastid_Ginkgo_Suan`
