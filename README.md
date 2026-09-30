@@ -134,33 +134,20 @@ From the **Preview** panel:
 
 2. National Center for Biotechnology Information. (2020). *Ginkgo biloba* chloroplast, complete genome (MN443423.1) [Nucleotide sequence]. Retrieved September 30, 2026, from https://www.ncbi.nlm.nih.gov/nuccore/MN443423.1
 
-3. Palmer, J. D. (1985). Comparative organization of chloroplast genomes. *Annual Review of Genetics*, 19, 325–354. https://doi.org/10.1146/annurev.ge.19.120185.001545
+----
 
-4. Wicke, S., & Schneeweiss, G. M. (2015). Next-generation plastid genomics: Progress and prospects. *Plant Systematics and Evolution*, 301(6), 1519–1533. https://doi.org/10.1007/s00606-015-1234-5
+## Reproducibility — How to Repeat This Analysis
 
-### Reproducibility
-1. Download FASTA from MN443423.1 NCBI page
-2. Create history named `Plastid_Ginkgo_Suan`
-3. Upload FASTA → run **Fasta Statistics**
-4. Results will match: 156,990 bp, GC 39.56%, N = 0
+Another student can reproduce this work exactly by following these steps:
+
+1. Go to NCBI Nucleotide → search for **"Ginkgo biloba chloroplast complete genome"** or directly use accession **MN443423.1** → download the FASTA file
+2. Sign in to https://usegalaxy.org/ → create a new history named: **Plastid_Ginkgo_Suan**
+3. Upload the FASTA file → rename it to: `Ginkgo_biloba_MN443423.1.fasta`
+4. Run **Fasta Statistics** → record genome length, GC%, and number of sequences
+   - Expected: Length = 156,990 bp; GC = 39.56%; Sequences = 1; Ambiguous bases = 0
+5. Open the NCBI GenBank "Features" table → extract gene counts, intron positions, and coordinates
+6. Use published boundary values: LSC = 88, 923 bp; SSC = 18, 261 bp; IR = 24, 903 bp each
+7. Compile tables following the lab report template
+8. Create GitHub repository with the folder structure below and document your workflow
 
 
-## Methods
-- Downloaded FASTA & GenBank files from NCBI GenBank
-- Uploaded FASTA to Galaxy (usegalaxy.org)
-- **Galaxy History:** Plastid_Ginkgo_Suan
-- **Tool Used:** Fasta Statistics
-- **Results:** 1 sequence, 156,990 bp, GC = 39.56%, N = 0
-- Screenshot saved in figures/
-
-## Gene Summary
-- Total genes: ~133
-- Protein-coding: 88 | tRNA: 35 | rRNA: 8
-- Notable features: *rps12* trans-splicing; standard quadripartite architecture
-- No confirmed pseudogenes or large rearrangements
-
-## Reproducibility
-1. Open https://www.ncbi.nlm.nih.gov/nuccore/MN443423.1 → download FASTA
-2. Sign in to Galaxy → create history named Plastid_Ginkgo_Suan
-3. Upload FASTA → run Fasta Statistics
-4. Cross-check gene content against the GenBank annotation page
