@@ -12,11 +12,32 @@
 - **NCBI Accession:** MN443423.1
 - **Source:** https://www.ncbi.nlm.nih.gov/nuccore/MN443423.1
 - **Retrieved:** 2026-09-30
-- **Genome Size:** 156,990 bp
-- **GC Content:** 39.56%
-- **Topology:** Circular
 - **Reference:** Yang, X., Zhou, T., Wang, G., Zhang, X., Guo, Q., & Cao, F. (2021). Structural characterization and comparative analysis of the chloroplast genome of Ginkgo biloba and other gymnosperms. Journal of Forestry Research, 32(2), 765–778. https://link.springer.com/article/10.1007/s11676-019-01088-4
 
+## Plastome Summary
+ | Feature | Value |
+ |---|---|
+ | Total genome size | 156,990 bp |
+ | GC content | 39.56% |
+ | Topology | Circular |
+ | LSC size | ~99,296 bp |
+ | SSC size | ~22,114 bp |
+ | IR sise (each) | ~17,790 bp |
+ | Total annotated genes | ~133 |
+ | Protein-coding genes | ~88 |
+ | tRNA genes | 35 |
+ | rRNA genes | 8 |
+ 
+ **Notable features:**
+ - Quadripartite structure (LSC–IRa–SSC–IRb)
+ - *rps12* trans-splicing (5' exon in LSC, 3' exons in IR)
+ - Genes with introns: *rps12, atpF, rpoC1, petB, petD*
+ - No confirmed pseudogenes or large rearrangements
+ **Galaxy analysis:**
+ - History name: Plastid_Ginkgo_Suan
+ - Tool: Fasta Statistics
+ - Screenshot saved in `figures/`
+ ---
 
 ## Genome Structure
 - LSC: ~99,296 bp
