@@ -128,6 +128,16 @@ From the **Preview** panel:
 - No confirmed pseudogenes in MN443423.1
 - ycf2 present as single copy — IR shorter than in most angiosperms
 
+## Data Sources & References
+
+1. Yang, X., Zhou, T., Wang, G., Zhang, X., Guo, Q., & Cao, F. (2021). Chloroplast genome characterization and comparative analysis of the chloroplast genome of Ginkgo biloba and other gymnosperms. *Journal of Forestry Research*, 32(2), 765–778. https://doi.org/10.1007/s11676-019-01088-4
+
+2. National Center for Biotechnology Information. (2020). *Ginkgo biloba* chloroplast, complete genome (MN443423.1) [Nucleotide sequence]. Retrieved September 30, 2026, from https://www.ncbi.nlm.nih.gov/nuccore/MN443423.1
+
+3. Palmer, J. D. (1985). Comparative organization of chloroplast genomes. *Annual Review of Genetics*, 19, 325–354. https://doi.org/10.1146/annurev.ge.19.120185.001545
+
+4. Wicke, S., & Schneeweiss, G. M. (2015). Next-generation plastid genomics: Progress and prospects. *Plant Systematics and Evolution*, 301(6), 1519–1533. https://doi.org/10.1007/s00606-015-1234-5
+
 ### Reproducibility
 1. Download FASTA from MN443423.1 NCBI page
 2. Create history named `Plastid_Ginkgo_Suan`
