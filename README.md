@@ -29,14 +29,17 @@
  | rRNA genes | 8 |
  
  **Notable features:**
- - Quadripartite structure (LSC–IRa–SSC–IRb)
- - *rps12* trans-splicing (5' exon in LSC, 3' exons in IR)
- - Genes with introns: *rps12, atpF, rpoC1, petB, petD*
- - No confirmed pseudogenes or large rearrangements
- **Galaxy analysis:**
- - History name: Plastid_Ginkgo_Suan
- - Tool: Fasta Statistics
- - Screenshot saved in `figures/`
+- Typical quadripartite circular structure: LSC–IRa–SSC–IRb
+- Ginkgo biloba is a gymnosperm "living fossil," sister to cycads
+- IR regions are shorter (~17,732 bp each) than in most flowering plants — 
+  caused by partial ycf2 gene loss
+- rps12 is trans-spliced: 5' exon in LSC, 3' exons in IR
+- ~15 genes contain introns; rps12, clpP, and ycf3 each have 2 introns
+- No confirmed pseudogenes in MN443423.1; rpl23 reported as pseudogene 
+  in other Ginkgo accessions
+- Genes in IR are duplicated: all 4 rRNA genes, ndhB, rps7
+- GC content varies by region: IR > LSC > SSC
+
  ---
 
 ## Genome Structure
