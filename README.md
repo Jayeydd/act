@@ -23,9 +23,9 @@
  | LSC size | 88, 923 bp |
  | SSC size | 18, 261 bp |
  | IR size (each) | 24, 903 bp |
- | Total annotated genes | ~133 |
- | Protein-coding genes | ~88 |
- | tRNA genes | 35 |
+ | Total annotated genes | 135 |
+ | Protein-coding genes | 86 |
+ | tRNA genes | 41 |
  | rRNA genes | 8 |
  
  **Notable features:**
