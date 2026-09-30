@@ -49,7 +49,9 @@
 ## Galaxy Workflow
 
 **Account:** https://usegalaxy.org/u/suan_jade/h/plastid-ginkgo-suan
+
 **History Name:** Plastid_Ginkgo_Suan
+
 **Date:** 2026-09-30
 
 ---
@@ -68,8 +70,8 @@
 1. Click **Upload Data** 
 2. Click **Choose Local File**
 3. Click **Start** → wait until dataset turns **green** 
-4. Rename dataset (pencil icon):
-   `Ginkgo_biloba_MN443423.1_plastome`
+4. Rename dataset :
+   `Ginkgo_biloba_MN443423.1`
 
 ### Step 4 — Run Fasta Statistics
 1. In left tool panel search box, type: `Fasta Statistics`
