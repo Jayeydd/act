@@ -20,9 +20,9 @@
  | Total genome size | 156,990 bp |
  | GC content | 39.56% |
  | Topology | Circular |
- | LSC size | ~99,296 bp |
- | SSC size | ~22,114 bp |
- | IR sise (each) | ~17,790 bp |
+ | LSC size | 88, 923 bp |
+ | SSC size | 18, 261 bp |
+ | IR size (each) | 24, 903 bp |
  | Total annotated genes | ~133 |
  | Protein-coding genes | ~88 |
  | tRNA genes | 35 |
