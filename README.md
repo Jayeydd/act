@@ -2,12 +2,15 @@
 
 **Student:** Jade Angela Suan
 
-**Course/Section:** Cell & Molecular Biology
+**Course/Section:** Cell & Molecular Biology - Section B
 
 **Date:** 2026-09-30
 
-## Genome Information
-- **Organism:** *Ginkgo biloba*
+**This repository documents my lab activity on the complete plastid (chloroplast) genome of *Ginkgo biloba*: where the genome came from, what I did in Galaxy, what I found, and how I interpreted it**.
+
+## Genome Source
+- **Genus:** *Ginkgo*
+- **Species:** *Ginkgo biloba*
 - **Family:** Ginkgoaceae
 - **NCBI Accession:** MN443423.1
 - **Source:** https://www.ncbi.nlm.nih.gov/nuccore/MN443423.1
@@ -106,6 +109,10 @@ From the **Preview** panel:
 -  N = 0 = high-quality sequence
 -  GC = 39.56% consistent with land-plant plastomes
 
+### Galaxy History Name: Plastid_Ginkgo_Suan
+
+### Tool Used: Fasta Statistics
+
 ---
 
 ## Gene Content Overview
@@ -124,6 +131,14 @@ From the **Preview** panel:
 | **Ribosomal RNA** | *rrn16, rrn23, rrn4.5, rrn5* — 2 copies each in IR | 8 total |
 | **Transfer RNA** | *trnA-UGC, trnC-GCA, trnD-GUC, trnE-UUC, trnF-GAA, trnG-GCC, trnG-UCC, trnH-GUG, trnI-CAU, trnI-GAU, trnK-UUU, trnL-CAA, trnL-UAA, trnL-UAG, trnM-CAU, trnN-GUU, trnP-UGG, trnQ-UUG, trnR-ACG, trnR-UCU, trnS-GCU, trnS-GGA, trnS-UGA, trnT-GGU, trnT-UGU, trnV-GAC, trnV-UAC, trnW-CCA, trnY-GUA* (six of them are also copied in the IR) | 41 total |
 | **Other Conserved Genes** | *matK, clpP, accD, cemA, ycf1, ycf2* | 6 |
+
+## Key Observations
+ - The inverted repeat (IR) regions are short at ~17.7 kb each — shorter than in most flowering plants — and *ycf2* occurs only once, inside the LSC.
+ - Thirteen genes sit in the IR and appear duplicated: 4 rRNA, 6 tRNA, plus *rps7*, *ndhB*, and *rps12*.
+ - *rps12* is trans‑spliced: its first exon lies in the LSC, while exons 2 and 3 are in both IRs.
+ - Several genes contain introns: *clpP* and *ycf3* each have two, and *atpF*, *petB*, *rpl2*, *trnK‑UUU*, *trnL‑UAA*, and *trnV‑UAC* each have one.
+ - *rpl23* is notably truncated — annotated at only 81 bp — suggesting it may be a pseudogene.
+ - The genome is complete and AT‑rich: GC = 39.56%, and Galaxy returned one continuous sequence with **no ambiguous N bases**.
 
 ## Data Sources & References
 
