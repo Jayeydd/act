@@ -4,88 +4,98 @@
 
 ---
 
-## 3. Data Source and Genome Selection
+## Data Source and Genome Selection
 
 | Item | Information |
 |---|---|
 | Accession | MN443423.1 |
-| Organism | *Ginkgo biloba* (Maidenhair Tree) |
+| Organism | *Ginkgo biloba* |
 | Family | Ginkgoaceae |
-| Genome length | 156,990 bp |
+| Genome Length | 156,990 bp |
 | Topology | Circular |
-| Reference | Yang, X., Zhou, T., Wang, G., Zhang, X., Guo, Q., & Cao, F. (2021). Chloroplast genome characterization and comparative analysis of the chloroplast genome of *Ginkgo biloba* and other gymnosperms. *Journal of Forestry Research*, 32(2), 765–778. DOI: 10.1007/s11676-019-01088-4 |
+| GC Content | 39.56% |
+| Database Source | NCBI Nucleotide (GenBank) |
+| Direct Link | https://www.ncbi.nlm.nih.gov/nuccore/MN443423.1 |
+| FASTA File | `Ginkgo_biloba_MN443423.1.fasta` |
+| GenBank File | `Ginkgo_biloba_MN443423.1.gb` |
+| Reference Publication | Yang, X., Zhou, T., Wang, G., et al. (2021). Structural characterization and comparative analysis of the chloroplast genome of *Ginkgo biloba* and other gymnosperms. *Journal of Forestry Research*, 32(2), 765–778. DOI: 10.1007/s11676-019-01088-4 |
 
 ---
 
-## 5. Galaxy Workflow
+## Galaxy Workflow
 
 | Step | Information |
 |---|---|
-| Sign in to own account | https://usegalaxy.org |
-| History name | Plastid_Ginkgo_Suan |
-| Upload FASTA | Uploaded MN443423.1 FASTA |
-| Recognized as FASTA and renamed | Format is fasta.<br>Renamed to: `Ginkgo_biloba_MN443423.1.fasta` |
-| Tool used | Fasta Statistics |
-| Genome length | 156,990 bp |
-| Number of sequence records | 1 |
-| GC content | 39.56% |
-| Complete plastome in one sequence record? | Yes |
+| Platform | Galaxy Project — https://usegalaxy.org |
+| User Account | suan_jade |
+| History Name | Plastid_Ginkgo_Suan |
+| Uploaded File | `Ginkgo_biloba_MN443423.1.` |
+| File Format | FASTA — verified |
+| Tool Used | Fasta Statistics |
+| Total Genome Length | 156,990 bp |
+| Number of Sequence Records | 1 |
+| GC Content Overall | 39.56% |
+| Complete Plastome in Single Record | Yes |
+| Gaps Detected | 0 |
+| Base Counts | A = 46,855 &nbsp; T = 48,032 &nbsp; C = 31,611 &nbsp; G = 30,492 |
 
 ---
 
-## 6. Required Plastid Genome Characterization
+## Plastid Genome Summary
 
-| Item | Information |
+| Feature | Information |
 |---|---|
-| Genus and species | *Ginkgo biloba* |
-| Family | Ginkgoaceae |
-| NCBI accession | MN443423.1 |
-| Complete genome size | 156,990 bp |
-| GC content | 39.56% |
-| Topology | Circular |
-| LSC | 88,923 bp |
-| SSC | 18,261 bp |
-| IR | 24,903 bp each |
-| Total annotated genes | 135 |
-| Protein-coding genes | 86 |
+| **Species** | *Ginkgo biloba* |
+| **Family** | Ginkgoaceae |
+| **NCBI Accession** | MN443423.1 |
+| **Total Plastome Size** | 156,990 bp |
+| **Topology** | Circular, quadripartite structure |
+| **LSC — Large Single Copy** | 99, 259 bp |
+| **SSC — Small Single Copy** | 22, 267 bp |
+| **IR — Inverted Repeat (each)** | 17,732 bp |
+| **GC Content** | 39.56% |
+| **Total Annotated Genes** | 134 |
+| Protein‑coding genes | 85 |
 | tRNA genes | 41 |
 | rRNA genes | 8 |
-| Introns | 15 genes contain introns; *rps12, clpP, ycf3* each have 2 introns |
-| Pseudogenes | None confirmed |
-| Gene duplications | Inverted Repeat regions duplicate: *rrn16, rrn23, rrn4.5, rrn5, rps7, ndhB, rps12* (partial), *trnA-UGC, trnI-GAU, trnL-CAA, trnN-GUU, trnR-ACG, trnV-GAC* → 14 genes duplicated → 2 copies each |
-| Other notable features | • *rps12* is trans-spliced (exon 1 in LSC; exons 2–3 in IR)<br>• *ycf2* present as single copy only — IR shorter than in most angiosperms<br>• Genome structure: LSC = 99,259 bp; SSC = 22,267 bp; IR = 17,732 bp each<br>• GC pattern: IR > LSC > SSC<br>• No explicit `repeat_region` labels in MN443423.1; sizes from Yang et al. (2021) |
+| **Genes with Introns** | 16 distinct genes |
+|  — with 2 introns | 3 genes: *rps12, clpP, ycf3* |
+|  — with 1 intron | 13 genes: *atpF, rpoC1, petB, petD, ndhB, ndhA, trnK‑UUU, trnL‑UAA, trnV‑UAC, trnG‑UCC, trnI‑GAU, trnA‑UGC* |
+| **Pseudogenes** | 	None flagged in the record; *rpl23* is truncated |
+| **Duplicated Genes (in IR)** | the IR	13 (4 rRNA, 6 tRNA, and the protein-coding genes *rps7, ndhB and rps12*) |
 
 ---
 
-## 7. Identified Gene Groups
+## Gene Content Overview
 
-| Gene Group | Genes in *Ginkgo biloba* MN443423.1 |
-|---|---|
-| Photosystem I (*psa*) | *psaA, psaB, psaC, psaI, psaJ, ycf3, ycf4* (7) |
-| Photosystem II (*psb*) | *psbA, psbB, psbC, psbD, psbE, psbF, psbH, psbI, psbJ, psbK, psbL, psbM, psbN, psbT, psbZ* (15) |
-| ATP synthase (*atp*) | *atpA, atpB, atpE, atpF, atpH, atpI* (6) |
-| Cytochrome b₆/f complex (*pet*) | *petA, petB, petD, petG, petL, petN* (6) |
-| Rubisco large subunit | *rbcL* (present) |
-| RNA polymerase (*rpo*) | *rpoA, rpoB, rpoC1, rpoC2* (4) |
-| Ribosomal proteins — large subunit (*rpl*) | *rpl2, rpl14, rpl16, rpl20, rpl22, rpl32, rpl33, rpl36* (8) |
-| Ribosomal proteins — small subunit (*rps*) | *rps2, rps3, rps4, rps7, rps8, rps11, rps12, rps14, rps15, rps16, rps18, rps19* (12) |
-| rRNA (*rrn*) | *rrn16, rrn23, rrn4.5, rrn5* (each in 2 IR copies = 8 total) |
-| tRNA (*trn*) | 41 total; includes *trnK-UUU, trnL-UAA, trnV-UAC* with introns; 6 duplicated in IR |
-| Other conserved genes | *matK, clpP, accD, cemA, ycf1, ycf2* |
-
----
-
-## 9. Plastid vs Mitochondrial Genome Comparison
-
-| Feature | Plastid Genome | Mitochondrial Genome |
+| Functional Group | Gene Names | Number |
 |---|---|---|
-| Cellular location | Plastids | Mitochondria |
-| Main biological functions | Photosynthesis genes, plastid transcription and translation | Respiration (oxidative phosphorylation), mitochondrial translation |
-| Typical genome organization | Circular map with LSC, SSC and two IR copies (156,990 bp in *G. biloba*) | Highly variable; often a master circle plus smaller subgenomic molecules |
-| Relative genome size | Small: ~120–170 kb (156,990 bp here) | Larger and highly variable in plants: ~200 kb to several Mb |
-| Gene content | 137 gene entries (116 unique here); ~110–130 typical | ~50–60 genes in angiosperms |
-| Copy number | Very high per cell (many plastids, many copies each) | Lower than plastid; varies by tissue |
-| Inheritance | Mostly maternal in angiosperms; paternal in gymnosperms including *Ginkgo* | Mostly maternal; varies among lineages |
-| Recombination / structural change | Low; gene order conserved; occasional IR expansion/contraction | High; frequent recombination between repeats and many rearrangements |
-| Mutation / substitution pattern | Slow substitution rate; slower in IR | Very slow substitution rate overall, but fast structural change |
-| Common research application | Phylogenetics, barcoding, conservation, transformation | Population studies, cytoplasmic male sterility, lineage tracing |
+| **Photosystem I** | *psaA, psaB, psaC, psaI, psaJ, ycf3, ycf4* | 7 |
+| **Photosystem II** | *psbA, psbB, psbC, psbD, psbE, psbF, psbH, psbI, psbJ, psbK, psbL, psbM, psbN, psbT, psbZ* | 15 |
+| **ATP Synthase** | *atpA, atpB, atpE, atpF, atpH, atpI* | 6 |
+| **Cytochrome b₆/f Complex** | *petA, petB, petD, petG, petL, petN* | 6 |
+| **Carbon Fixation** | *rbcL* | 1 |
+| **NADH Dehydrogenase** | *ndhA, ndhB, ndhC, ndhD, ndhE, ndhF, ndhG, ndhH, ndhI, ndhJ, ndhK* | 11 |
+| **RNA Polymerase** | *rpoA, rpoB, rpoC1, rpoC2* | 4 |
+| **Ribosomal Proteins (Large Subunit — rpl)** | *rpl2, rpl14, rpl16, rpl20, rpl22, rpl23 (truncated), rpl32, rpl33, rpl36* | 9 |
+| **Ribosomal Proteins (Small Subunit — rps)** | *rps2, rps3, rps4, rps7, rps8, rps11, rps12, rps14, rps15, rps16, rps18, rps19* | 12 |
+| **Ribosomal RNA** | *rrn16, rrn23, rrn4.5, rrn5* — 2 copies each in IR | 8 total |
+| **Transfer RNA** | *trnA-UGC, trnC-GCA, trnD-GUC, trnE-UUC, trnF-GAA, trnG-GCC, trnG-UCC, trnH-GUG, trnI-CAU, trnI-GAU, trnK-UUU, trnL-CAA, trnL-UAA, trnL-UAG, trnM-CAU, trnN-GUU, trnP-UGG, trnQ-UUG, trnR-ACG, trnR-UCU, trnS-GCU, trnS-GGA, trnS-UGA, trnT-GGU, trnT-UGU, trnV-GAC, trnV-UAC, trnW-CCA, trnY-GUA* (six of them are also copied in the IR) | 41 total |
+| **Other Conserved Genes** | *matK, clpP, accD, cemA, ycf1, ycf2* | 6 |
+
+---
+
+## Plastid vs Mitochondrial Genome Comparison
+
+| Feature | Plastid genome | Mitochondrial genome |
+|---|---|---|
+| Cellular location | Chloroplasts (plastids) | Mitochondria |
+| Main biological functions | Photosynthesis, plus plastid transcription and translation | Cellular respiration (oxidative phosphorylation) and ATP production |
+| Typical genome organization | Circular map with LSC, SSC and two IR copies | Highly variable; often a master circle plus smaller subgenomic molecules |
+| Relative genome size | About 120 to 170 kb; 156,990 bp in *Ginkgo* | About 200 kb to over 2 Mb in plants, generally much larger |
+| Gene content | About 110 to 130 unique genes in most land plants; 134 annotated in *Ginkgo* MN443423.1 (IR copies counted) | About 50 to 60 genes, mostly respiratory subunits, with a reduced tRNA set |
+| Copy number | Very high; many plastids per cell and many genome copies per plastid | Lower than plastid; varies by tissue |
+| Inheritance | Maternal in *Ginkgo* [3] and in most flowering plants; conifers are often paternal | Mostly maternal in plants |
+| Recombination / structural change | Low; gene order is usually conserved, with occasional IR expansion or contraction | High; frequent recombination between repeats and many rearrangements |
+| Mutation / substitution pattern | Low nucleotide substitution rate, lower still in the IR | Even lower nucleotide change, but fast structural change and more RNA editing |
+| Common research applications | Phylogenetics, DNA barcoding, species identification, conservation genetics, plastid transformation | Cytoplasmic male sterility, maternal lineage tracing; used less for plant phylogenetics because of rearrangements and slow sequence change |
