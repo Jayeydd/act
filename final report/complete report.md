@@ -279,4 +279,4 @@
 3. Galaxy Link: https://usegalaxy.org/u/suan_jade/h/plastid-ginkgo-suan
    
 
-4. Github Link: 
+4. Github Link: https://github.com/Jayeydd/cmb-plastid-genome-Ginkgo-Suan
