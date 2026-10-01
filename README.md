@@ -12,38 +12,38 @@
 - **NCBI Accession:** MN443423.1
 - **Source:** https://www.ncbi.nlm.nih.gov/nuccore/MN443423.1
 - **Retrieved:** 2026-09-30
-- **Reference:** Yang, X., Zhou, T., Wang, G., Zhang, X., Guo, Q., & Cao, F. (2021). Structural characterization and comparative analysis of the chloroplast genome of Ginkgo biloba and other gymnosperms. Journal of Forestry Research, 32(2), 765–778. https://link.springer.com/article/10.1007/s11676-019-01088-4
+- **Reference:** Yang, X., Zhou, T., Wang, G., Zhang, X., Guo, Q., & Cao, F. (2021). Structural characterization and comparative analysis of the chloroplast genome of Ginkgo biloba and other gymnosperms. Journal of Forestry Research, 32(2), 765–778. DOI: 10.1007/s11676-019-01088-4 
 
-## Plastome Summary
- | Feature | Value |
- |---|---|
- | Total genome size | 156,990 bp |
- | GC content | 39.56% |
- | Topology | Circular |
- | LSC size | 88, 923 bp |
- | SSC size | 18, 261 bp |
- | IR size (each) | 24, 903 bp |
- | Total annotated genes | 135 |
- | Protein-coding genes | 86 |
- | tRNA genes | 41 |
- | rRNA genes | 8 |
- | Genes with introns | 15 | GenBank feature analysis |
- | Pseudogenes | None confirmed |
- | Duplicated genes | 14 (in IR regions) | 
+## Plastid Genome Summary
+
+| Feature | Information |
+|---|---|
+| **Species** | *Ginkgo biloba* |
+| **Family** | Ginkgoaceae |
+| **NCBI Accession** | MN443423.1 |
+| **Total Plastome Size** | 156,990 bp |
+| **Topology** | Circular, quadripartite structure |
+| **LSC — Large Single Copy** | 99, 259 bp |
+| **SSC — Small Single Copy** | 22, 267 bp |
+| **IR — Inverted Repeat (each)** | 17,732 bp |
+| **GC Content** | 39.56% |
+| **Total Annotated Genes** | 134 |
+| Protein‑coding genes | 85 |
+| tRNA genes | 41 |
+| rRNA genes | 8 |
+| **Genes with Introns** | 16 distinct genes |
+|  — with 2 introns | 3 genes: *rps12, clpP, ycf3* |
+|  — with 1 intron | 13 genes: *atpF, rpoC1, petB, petD, ndhB, ndhA, trnK‑UUU, trnL‑UAA, trnV‑UAC, trnG‑UCC, trnI‑GAU, trnA‑UGC* |
+| **Pseudogenes** | 	None flagged in the record; *rpl23* is truncated |
+| **Duplicated Genes (in IR)** | the IR	13 (4 rRNA, 6 tRNA, and the protein-coding genes *rps7, ndhB and rps12*) |
+
 ### Notable Features
- - Typical quadripartite circular structure: LSC–IRa–SSC–IRb
- - *Ginkgo biloba* is a gymnosperm "living fossil," sister to cycads
- - IR regions are shorter (~17,732 bp each) than in most flowering plants —
-   caused by partial *ycf2* loss; *ycf2* exists as a single copy only
- - ***rps12* is trans-spliced**: 5' exon in LSC, 3' exons in IR
- - 3 genes have **2 introns**: *rps12, clpP, ycf3*
- - Genes with single introns: *atpF, rpoC1, petB, petD, ndhB, trnK-UUU, trnL-UAA, trnV-UAC*
- - **14 genes duplicated** in IR:
-   - rRNA: *rrn16, rrn23, rrn4.5, rrn5*
-   - Protein-coding: *rps7, ndhB, rps12* (partial)
-   - tRNA: *trnA-UGC, trnI-GAU, trnL-CAA, trnN-GUU, trnR-ACG, trnV-GAC*
- - No confirmed pseudogenes in MN443423.1
- - GC pattern: IR > LSC > SSC
+- The genome has the usual LSC–IRa–SSC–IRb layout.
+- *rps12* is trans-spliced. Its first exon is in the LSC and exons 2 and 3 are in the IR.
+- The IRs are about 17.7 kb each, shorter than the roughly 25 kb seen in many flowering plants. *ycf2* occurs once (92549..99088), inside the LSC.
+- *rpl23* is annotated as a CDS of only 81 bp (90448..90528), which is far shorter than a normal *rpl23.*
+- The record has no pseudo or repeat_region features.
+
  ---
 
 ## Galaxy Workflow
@@ -98,7 +98,7 @@ From the **Preview** panel:
   - History name: `Plastid_Ginkgo_Suan`
   - Renamed FASTA file 
   - Fasta Statistics results table 
-- Save as: `galaxy_stats_MN443423.1.jpg` → place in `figures/` folder
+- Save as: `galaxy_fasta_ statistics.jpg` → place in `figures/` folder
 
 ### Step 7 — Verify
 -  Length matches NCBI: 156,990 bp
@@ -110,31 +110,35 @@ From the **Preview** panel:
 
 ## Gene Content Overview
 
-| Functional Group | Genes Present |
-|---|---|
-| Photosystem I (psa) | psaA, psaB, psaC, psaI, psaJ, ycf3, ycf4 (7) |
-| Photosystem II (psb) | psbA, psbB, psbC, psbD, psbE, psbF, psbH, psbI, psbJ, psbK, psbL, psbM, psbN, psbT, psbZ (15) |
-| ATP synthase (atp) | atpA, atpB, atpE, atpF, atpH, atpI (6) |
-| Cytochrome b₆/f complex (pet) | petA, petB, petD, petG, petL, petN (6) |
-| Carbon fixation | rbcL (present) |
-| NADH dehydrogenase (ndh) | ndhA, ndhB, ndhC, ndhD, ndhE, ndhF, ndhG, ndhH, ndhI, ndhJ, ndhK (11) |
-| RNA polymerase (rpo) | rpoA, rpoB, rpoC1, rpoC2 (4) |
-| Ribosomal proteins (rpl) | rpl2, rpl14, rpl16, rpl20, rpl22, rpl32, rpl33, rpl36 (8) |
-| Ribosomal proteins (rps) | rps2, rps3, rps4, rps7, rps8, rps11, rps12, rps14, rps15, rps16, rps18, rps19 (12) |
-| rRNA (rrn) | rrn16, rrn23, rrn4.5S, rrn5S — 2 copies each in IR = 8 total |
-| tRNA (trn) | 41 total; trnK-UUU, trnL-UAA, trnV-UAC contain introns; 6 duplicated in IR |
-| Other genes | matK, clpP, accD, cemA, ycf1, ycf2 (single copy only) |
-
-- rps12 is trans-spliced (exon 1 in LSC; exons 2–3 in IR)
-- clpP and ycf3 each have 2 introns
-- No confirmed pseudogenes in MN443423.1
-- ycf2 present as single copy — IR shorter than in most angiosperms
+| Functional Group | Gene Names | Number |
+|---|---|---|
+| **Photosystem I** | *psaA, psaB, psaC, psaI, psaJ, ycf3, ycf4* | 7 |
+| **Photosystem II** | *psbA, psbB, psbC, psbD, psbE, psbF, psbH, psbI, psbJ, psbK, psbL, psbM, psbN, psbT, psbZ* | 15 |
+| **ATP Synthase** | *atpA, atpB, atpE, atpF, atpH, atpI* | 6 |
+| **Cytochrome b₆/f Complex** | *petA, petB, petD, petG, petL, petN* | 6 |
+| **Carbon Fixation** | *rbcL* | 1 |
+| **NADH Dehydrogenase** | *ndhA, ndhB, ndhC, ndhD, ndhE, ndhF, ndhG, ndhH, ndhI, ndhJ, ndhK* | 11 |
+| **RNA Polymerase** | *rpoA, rpoB, rpoC1, rpoC2* | 4 |
+| **Ribosomal Proteins (Large Subunit — rpl)** | *rpl2, rpl14, rpl16, rpl20, rpl22, rpl23 (truncated), rpl32, rpl33, rpl36* | 9 |
+| **Ribosomal Proteins (Small Subunit — rps)** | *rps2, rps3, rps4, rps7, rps8, rps11, rps12, rps14, rps15, rps16, rps18, rps19* | 12 |
+| **Ribosomal RNA** | *rrn16, rrn23, rrn4.5, rrn5* — 2 copies each in IR | 8 total |
+| **Transfer RNA** | *trnA-UGC, trnC-GCA, trnD-GUC, trnE-UUC, trnF-GAA, trnG-GCC, trnG-UCC, trnH-GUG, trnI-CAU, trnI-GAU, trnK-UUU, trnL-CAA, trnL-UAA, trnL-UAG, trnM-CAU, trnN-GUU, trnP-UGG, trnQ-UUG, trnR-ACG, trnR-UCU, trnS-GCU, trnS-GGA, trnS-UGA, trnT-GGU, trnT-UGU, trnV-GAC, trnV-UAC, trnW-CCA, trnY-GUA* (six of them are also copied in the IR) | 41 total |
+| **Other Conserved Genes** | *matK, clpP, accD, cemA, ycf1, ycf2* | 6 |
 
 ## Data Sources & References
 
-1. Yang, X., Zhou, T., Wang, G., Zhang, X., Guo, Q., & Cao, F. (2021). Chloroplast genome characterization and comparative analysis of the chloroplast genome of Ginkgo biloba and other gymnosperms. *Journal of Forestry Research*, 32(2), 765–778. https://doi.org/10.1007/s11676-019-01088-4
+1. National Center for Biotechnology Information (NCBI). *Ginkgo biloba* chloroplast, complete genome. GenBank: MN443423.1.
+   https://www.ncbi.nlm.nih.gov/nuccore/MN443423.1
 
-2. National Center for Biotechnology Information. (2020). *Ginkgo biloba* chloroplast, complete genome (MN443423.1) [Nucleotide sequence]. Retrieved September 30, 2026, from https://www.ncbi.nlm.nih.gov/nuccore/MN443423.1
+2. The complete plastid genome provides insight into maternal plastid inheritance mode of the living fossil plant *Ginkgo biloba. Plant Diversity.*
+   https://pmc.ncbi.nlm.nih.gov/articles/PMC10772217
+  
+3. Yang, X., Zhou, T., Wang, G., Su, X., Zhang, X., Guo, Q., & Cao, F. (2021). Structural characterization and comparative analysis of the chloroplast genome of *Ginkgo biloba* and other gymnosperms. *Journal of Forestry Research*, 32(2), 765–778.  
+   https://doi.org/10.1007/s11676-019-01088-4
+
+4. Galaxy History: https://usegalaxy.org/u/suan_jade/h/plastid-ginkgo-suan
+   
+5. Github Repository: https://github.com/Jayeydd/cmb-plastid-genome-Ginkgo-Suan
 
 ----
 
