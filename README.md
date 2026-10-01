@@ -27,7 +27,7 @@
  | Protein-coding genes | 86 |
  | tRNA genes | 41 |
  | rRNA genes | 8 |
- | Genes with introns | ~15 | GenBank feature analysis |
+ | Genes with introns | 15 | GenBank feature analysis |
  | Pseudogenes | None confirmed |
  | Duplicated genes | 14 (in IR regions) | 
 ### Notable Features
