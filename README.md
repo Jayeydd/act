@@ -55,6 +55,8 @@
 
 **History Name:** Plastid_Ginkgo_Suan
 
+**Tool Used:** Fasta Statistics
+
 **Date:** 2026-09-30
 
 ---
@@ -108,10 +110,6 @@ From the **Preview** panel:
 -  Single record = complete genome (not fragmented)
 -  N = 0 = high-quality sequence
 -  GC = 39.56% consistent with land-plant plastomes
-
-### Galaxy History Name: Plastid_Ginkgo_Suan
-
-### Tool Used: Fasta Statistics
 
 ---
 
