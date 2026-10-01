@@ -126,133 +126,75 @@
 - No *ycf2* duplication — IR length shorter than in most flowering plants
 
 ## Questions for the Student Report
- ### 1. Full Organism & Genome Information
- | Item | Details |
- |---|---|
- | Full Scientific Name | *Ginkgo biloba* |
- | Family | Ginkgoaceae |
- | NCBI Accession / Version | MN443423.1 |
- | Database Source | NCBI GenBank (Nucleotide database) |
- | Complete Plastid Genome Size | 156,990 bp |
- | Direct Link | https://www.ncbi.nlm.nih.gov/nuccore/MN443423.1 |
- ---
+  1. The organism is *Ginkgo biloba* (maidenhair tree), family Ginkgoaceae. I used the GenBank record MN443423.1 from the NCBI Nucleotide database. The complete plastid genome is 156,990 bp. 
 
-### 2. Evidence for Complete Plastid Genome
- Three key confirmations:
- - **Length matches known range**: 156,990 bp falls within typical plant plastome range (~120–170 kb), far larger than DNA barcode markers (~600 bp) or gene fragments.
- - **Quadripartite structure present**: LSC (88,923 bp) + IRa (24,903 bp) + SSC (18,261 bp) + IRb (24,903 bp) — the hallmark architecture of a complete chloroplast genome.
- - **Full gene complement annotated**: 135 total genes including photosystem, ATP synthase, ribosomal, rRNA, and tRNA genes — not a partial or nuclear sequence.
- - **Galaxy verification**: Single continuous record with 0 gaps confirms no fragmentation.
- ---
- ### 3. Genome Organization & Region Sizes
- - **Overall organization**: Circular, double‑stranded DNA with **quadripartite** architecture — Large Single Copy → Inverted Repeat a → Small Single Copy → Inverted Repeat b.
- - **LSC–IR–SSC–IR arrangement**: Present — the standard land plant plastome structure.
- - **Region sizes**:
-   | Region | Size |
-   |---|---|
-   | LSC — Large Single Copy | 88,923 bp |
-   | IR — Inverted Repeat (each copy) | 24,903 bp |
-   | SSC — Small Single Copy | 18,261 bp |
-   | Total | 156,990 bp |
- ---
- ### 4. Annotated Gene Content & IR Duplication
- | Category | Count |
- |---|---|
- | **Total annotated genes** | 135 |
- | Protein‑coding genes | 86 |
- | tRNA genes | 41 |
- | rRNA genes | 8 |
- | Pseudogenes | None confirmed |
+  2. The record is titled "chloroplast, complete genome," and it is 156,990 bp, which is in the normal size range for plastomes rather than a short single-gene barcode fragment like rbcL or matK. It is listed as circular and is annotated with typical plastid genes such as psaA, psbA, and rbcL. The Galaxy's Fasta Statistics showed exactly 1 sequence record (scaffold_num_seq = 1) instead of multiple fragmented contigs. 
 
- **Why IR genes appear in two copies**: The Inverted Repeat regions (IRa and IRb) have **identical DNA sequences** oriented in opposite directions. Any gene located within these regions is automatically present **twice** — once in IRa and once in IRb — giving two identical functional copies in the full genome sequence.
+  3. It has the usual LSC–IRa–SSC–IRb layout. According to Yang et al. (2021), the LSC is 99,259 bp, the SSC is 22,267 bp, and each IR is 17,732 bp. Together that is 99,259 + 22,267 + 17,732 + 17,732 = 156,990 bp. The IRs are shorter than in most flowering plants, which I read as an IR contraction. Earlier work on the Ginkgo plastome links this to the loss of one ycf2 copy.
 
- ---
- ### 5. Eight Protein‑Coding Genes — Different Functional Groups
- | Gene | Functional Group | Biological Function |
- |---|---|---|
- | *psaA* | Photosystem I | Core reaction center protein; binds chlorophyll → light energy capture |
- | *psbA* | Photosystem II | D1 protein; binds cofactors → primary target of herbicides |
- | *atpB* | ATP Synthase | Beta subunit; forms catalytic site → ATP production |
- | *petA* | Cytochrome b₆/f | Cytochrome f → electron transport chain |
- | *rbcL* | Carbon Fixation | Large subunit of Rubisco → CO₂ fixation in Calvin cycle |
- | *ndhF* | NADH Dehydrogenase | Subunit F → cyclic electron flow & stress response |
- | *rpoB* | RNA Polymerase | Beta subunit → transcribes plastid genes |
- | *rps12* | Ribosomal Protein (small subunit) | Component of 30S ribosome → protein synthesis; *trans‑spliced* |
- ---
- ### 6. RNA Features & Intron‑Containing Genes
- **rRNA Genes**: *rrn16, rrn23, rrn4.5, rrn5* — each present in 2 copies in IR → 8 total; form ribosome structural core.
- **tRNA Examples**:
- - *trnK‑UUU* — carries lysine; **contains intron** → matK gene nested within its intron
- - *trnL‑UAA* — carries leucine; classic group I intron
- - *trnA‑UGC* — carries alanine; duplicated in IR
- **Genes with Introns**:
- - **Two introns**: *rps12, clpP, ycf3*
- - **One intron**: *atpF, rpoC1, petB, petD, ndhB, ndhA, trnK‑UUU, trnL‑UAA, trnV‑UAC, trnG‑UCC, trnI‑GAU, trnA‑UGC*
- - *rps12* is special: **trans‑spliced** — exon 1 in LSC; exons 2–3 in both IR regions
- ---
- ### 7. Pseudogenes, Losses, Duplications & Unusual Features
- | Feature | Observation |
- |---|---|
- | **Pseudogenes** | None reported / confirmed |
- | **Gene losses** | No gene losses detected — full typical complement present |
- | **Duplications** | 14 genes duplicated in IR regions → appear twice |
- | **Rearrangements** | None reported — gene order conserved, typical of gymnosperms |
- | **Unusual features** | 1. *rps12* trans‑splicing<br>2. Shorter IR (~24,903 bp) → *ycf2* present as **single copy** (duplicated in most angiosperms)<br>3. *Ginkgo* is gymnosperm → plastid inheritance is **paternal** (maternal in most flowering plants) |
- ---
- ### 8. GC Content & Notable Observations
- - **GC Content**: 39.56% (from Galaxy Fasta Statistics)
- - **Two other notable observations**:
-   1. **Base composition bias**: A+T rich (60.44%) — common in plastid genomes; IR regions have slightly higher GC (~42%) than single‑copy regions → IR more structurally stable.
-   2. **Sequence continuity**: Galaxy shows **1 single record, 0 gaps** → fully assembled; no Ns or ambiguous bases confirm high‑quality sequence.
- ---
+  4. The record has 134 annotated genes: 85 protein-coding, 41 tRNA, and 8 rRNA. No confirmed pseudogenes were identified in the *Ginkgo biloba* plastid genome accession MN443423.1. Some genes show up twice because the two IR regions are copies of the same sequence. Any gene inside the IR is therefore counted once in IRa and once in IRb. The IR copies should be identical or nearly so.
 
-### 9. Compare Plastid and Mitochondrial Genomes
-
-#### A. Five Differences
-
-| Category | Plastid Genome | Mitochondrial Genome |
-|---|---|---|
-| **Location** | Chloroplast organelles | Mitochondrial organelles |
-| **Biological role** | Photosynthesis; synthesis of chloroplast proteins & RNAs | Cellular respiration; ATP production via oxidative phosphorylation |
-| **Genome organization** | Circular; conserved quadripartite structure (LSC–IR–SSC–IR) | Highly variable; master circle + subgenomic molecules; frequent rearrangements |
-| **Gene content** | ~110–130 unique genes (135 total in *Ginkgo*); includes photosystem, rbcL, rpo, full tRNA/rRNA sets | ~50–60 unique genes; mostly respiratory chain subunits; reduced tRNA set |
-| **Copy number** | Very high — hundreds of copies per cell | Lower — varies by tissue, generally fewer than plastids |
-| **Inheritance** | Paternal in *Ginkgo* and most gymnosperms | Mostly maternal in plants |
-| **Evolutionary behavior** | Slow sequence evolution; gene order highly conserved | Slow sequence evolution but rapid structural changes; frequent gene loss/gain |
-
-#### B. Five Similarities
-
-| # | Similarity |
-|---|---|
-| 1 | Both are **double‑stranded circular DNA** molecules — not linear like nuclear chromosomes |
-| 2 | Both originated through **endosymbiosis** from ancient bacteria; retain their own independent genomes |
-| 3 | Both possess **complete transcription and translation machinery** — rRNA, tRNA, ribosomal protein genes |
-| 4 | Both are **cytoplasmically inherited** — not through nuclear chromosomes; uniparental in most plants |
-| 5 | Both have **higher copy number than nuclear DNA** — easier to isolate, amplify, and sequence from small/old samples |
-| 6 | Both encode **hydrophobic membrane proteins** — core energy‑processing complexes (photosynthesis / respiration) |
-
- ---
+  5. Eight protein-coding genes from different functional groups:
+     
+   - 1. psaA (Photosystem I): psaA codes for a core protein of Photosystem I, which holds the chlorophyll and electron carriers that capture light energy.
+        
+   - 2. psbA (Photosystem II): Encodes the D1 reaction center protein responsible for primary charge separation and water splitting in PSII.
  
- ### 10. Practical Value of Plastid Genomes in Research — Advantages vs Nuclear Genome
- #### Advantages of Plastid Genomes
- | Advantage | Explanation |
- |---|---|
- | **High copy number** | Hundreds of copies per cell → easy to isolate, amplify, and sequence even from small, degraded, or ancient samples; works well with herbarium specimens or fossil material |
- | **Conserved structure & sequence** | Slow evolution → easy to align across distant species; excellent for resolving deep evolutionary relationships |
- | **Haploid & non‑recombining** | No sexual recombination → simpler lineage tracing; clearer phylogeographic patterns |
- | **No sex chromosomes** | Same data from all individuals → no bias between males/females; consistent results across samples |
- | **Small genome size** | Cheaper & faster to sequence than nuclear genomes; manageable data volume for analysis |
- | **Maternally or paternally inherited** | Tracks single parent lineage → useful for gene flow, dispersal, and biogeography studies |
- #### Limitations
- - Represents only **one parental lineage** — cannot capture full biparental genetic history
- - Few genes → limited resolution for **very closely related** species or populations
- - Cannot study **nuclear genes, adaptive traits, sex‑linked characteristics, or most recent evolutionary changes**
- - Limited functional information compared to the nuclear genome
- #### Research Question Examples
- | Data Type | Research Question |
- |---|---|
- | **Plastid data** | *What is the evolutionary position of Ginkgo biloba among all seed plants?* → conserved plastid genes resolve deep phylogenetic branches |
- | **Nuclear data** | *Do Ginkgo populations show adaptive genetic differences across temperature and rainfall zones?* → nuclear SNPs reveal recent adaptation, population structure, and local selection |
+   - 3. atpB (ATP Synthase): atpB codes for the beta subunit of ATP synthase, which is part of the catalytic site that makes ATP using a proton gradient.
+
+   - 4. ​petA (Cytochrome b6/f complex): petA codes for cytochrome f, part of the cytochrome b6/f complex, which transfers electrons between PSII and PSI.
+        
+   - 5. ​rbcL (Carbon Fixation): rbcL codes for the large subunit of Rubisco, the enzyme that fixes CO2 in the Calvin cycle.
+        
+   - 6. ​ndhF (NADH Dehydrogenase): ndhF codes for a subunit of the NADH dehydrogenase-like complex, which takes part in cyclic electron flow around Photosystem I.
+        
+   - 7. rpoB (RNA Polymerase): Encodes the beta subunit of plastid-encoded RNA polymerase (PEP) for gene transcription.
+        
+   - 8. rps12 (Ribosomal Small Subunit): Encodes ribosomal protein S12 required for plastid protein translation. It also trans-spliced
+
+  7. The rRNA genes are rrn16, rrn23, rrn4.5, and rrn5, and they sit in the IR, so there are two copies of each. For tRNAs, trnK-UUU carries lysine and has an intron that contains matK. trnL-UAA carries leucine, and its intron is a group I intron. Two genes with introns are clpP and ycf3, which have two introns each. rps12 is trans-spliced, with its first exon in the LSC and the other exons in the IR.
+
+ 8. In accession **MN443423.1**, no pseudogenes were confirmed, but the *Ginkgo biloba* plastome exhibits a gymnosperm-specific inverted repeat (IR) contraction (~24.9 kb) resulting from the partial loss and shifting of *ycf2*, which leaves *ycf2* as a single-copy gene in the large single-copy (LSC) region rather than duplicated as in most angiosperms.
+
+ 9. The GC content is 39.56%. The base counts from Galaxy are A = 46,855, T = 48,032, C = 31,611, and G = 30,492, so the genome is about 60.4% AT. Two other things I noticed:
+   - The whole genome came out as a single sequence record with no N bases.
+   - The IRs are a lot shorter than in most angiosperms, which cuts the total genome size.
+
+ 9. The five similarities:
+    - Both come from bacteria that were taken in by endosymbiosis.
+    - Both keep a small genome compared with their free-living ancestors, because many genes moved to the nucleus.
+    - Both code for part of their own translation machinery, such as rRNAs and ribosomal proteins.
+    - Both code for subunits of membrane protein complexes that make energy.
+    - Both are usually inherited from one parent and exist in many copies per cell.
+
+ Differences:
+
+  The five differences:
+    - Plastids do photosynthesis/Carbon fixation, and mitochondria do respiration/ATP synthesis.
+    - Plastomes are small and similar in size across plants (about 120–170 kb), while plant mitochondrial genomes range from about 200 kb to several Mb.
+    - Plastomes have a single circular map with quadripartite LSC–IR–SSC–IR layout, while mitochondrial genomes are often a dynamic master circle with subgenomic linear/circular forms.
+    - Plastomes have high gene density about 110–130 genes, and plant mitochondrial genomes have low gene density about 50–60 genes spread over larger non-coding regions.
+    - Plastid sequences evolve faster at the nucleotide level than plant mitochondrial ones, but their structure changes much less. Plant mitochondria show the opposite pattern, and they also have much more RNA editing.
+
+For Ginkgo specifically, plastids look maternally inherited. A recent study using this same genome says so, and it also says mitochondria may be maternal too. So inheritance is not a difference I would list here.
+
+  10. Plastid genomes are useful because:
+      - They have many copies per cell, so they are easy to recover even from old or poor-quality DNA.
+      - They are small, so sequencing and assembly are cheaper.
+      - Their gene content and order are conserved, so they are easy to align between species.
+      - They mostly don't recombine and are inherited from one parent, which makes lineages easier to follow.
+      - They are the same in males and females. In a dioecious species like Ginkgo, nuclear sex chromosomes have lower recombination and different copy numbers in the two sexes, which complicates analysis.
+      - They give a lot of phylogenetic signal for a small amount of sequence.
+
+The limitations are that:
+  - They show only one parent's lineage.
+  - They have few genes, so they may not separate very close relatives.
+  - They tell you little about adaptation or traits controlled by nuclear genes.
+  - A plastome tree can disagree with the species tree if there has been hybridization or chloroplast capture.
+
+Research Question Examples
+ Plastid data: Where does Ginkgo biloba fall among the living seed plants? Plastid genes are conserved enough to align across very distant groups, so a plastome is a useful starting point for this kind of question.
+ Nuclear data: Do Ginkgo populations from warmer or wetter areas differ genetically from those in cooler or drier areas? Nuclear SNPs from many genes can show population structure and possible local adaptation. The plastome can't, since it is inherited from one parent and acts as a single locus.
 
  ### 10. Plastid vs Mitochondrial Genome Comparison
  | Feature | Plastid Genome | Mitochondrial Genome |
