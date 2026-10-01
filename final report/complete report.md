@@ -62,7 +62,7 @@
 ![Figure 3 — Galaxy Fasta Statistics Results](/figures/galaxy_fasta_statistics.jpg)
 *Figure 3.* Galaxy Fasta Statistics output for *Ginkgo biloba* chloroplast genome. Confirms genome length = 156,990 bp, GC content = 39.56%, and one continuous sequence record with no gaps.
 
-## Requiired Plastid Genome Characterization
+## Required Plastid Genome Characterization
 
 | Feature | Information |
 |---|---|
@@ -71,12 +71,12 @@
 | **NCBI Accession** | MN443423.1 |
 | **Total Plastome Size** | 156,990 bp |
 | **Topology** | Circular — quadripartite structure |
-| **LSC — Large Single Copy** | 88,923 bp |
-| **SSC — Small Single Copy** | 18,261 bp |
-| **IR — Inverted Repeat (each)** | 24,903 bp |
+| **LSC — Large Single Copy** | 99, 259 bp |
+| **SSC — Small Single Copy** | 22, 267 bp |
+| **IR — Inverted Repeat (each)** | 17,732 bp |
 | **GC Content** | 39.56% |
-| **Total Annotated Genes** | 135 |
-| Protein‑coding genes | 86 |
+| **Total Annotated Genes** | 134 |
+| Protein‑coding genes | 85 |
 | tRNA genes | 41 |
 | rRNA genes | 8 |
 | **Genes with Introns** | 15 distinct genes |
@@ -126,7 +126,8 @@
 - No *ycf2* duplication — IR length shorter than in most flowering plants
 
 ## Questions for the Student Report
-  1. The organism is *Ginkgo biloba* (maidenhair tree), family Ginkgoaceae. I used the GenBank record MN443423.1 from the NCBI Nucleotide database. The complete plastid genome is 156,990 bp. 
+
+  1. The organism is *Ginkgo biloba* (maidenhair tree), family Ginkgoaceae. I used the GenBank record **MN443423.1** from the NCBI Nucleotide database. The complete plastid genome is 156,990 bp. 
 
   2. The record is titled "chloroplast, complete genome," and it is 156,990 bp, which is in the normal size range for plastomes rather than a short single-gene barcode fragment like rbcL or matK. It is listed as circular and is annotated with typical plastid genes such as psaA, psbA, and rbcL. The Galaxy's Fasta Statistics showed exactly 1 sequence record (scaffold_num_seq = 1) instead of multiple fragmented contigs. 
 
@@ -136,21 +137,21 @@
 
   5. Eight protein-coding genes from different functional groups:
      
-   - 1. psaA (Photosystem I): psaA codes for a core protein of Photosystem I, which holds the chlorophyll and electron carriers that capture light energy.
+   - **1. psaA (Photosystem I):** psaA codes for a core protein of Photosystem I, which holds the chlorophyll and electron carriers that capture light energy.
         
-   - 2. psbA (Photosystem II): Encodes the D1 reaction center protein responsible for primary charge separation and water splitting in PSII.
+   - **2. psbA (Photosystem II):** Encodes the D1 reaction center protein responsible for primary charge separation and water splitting in PSII.
  
-   - 3. atpB (ATP Synthase): atpB codes for the beta subunit of ATP synthase, which is part of the catalytic site that makes ATP using a proton gradient.
+   - **3. atpB (ATP Synthase):** atpB codes for the beta subunit of ATP synthase, which is part of the catalytic site that makes ATP using a proton gradient.
 
-   - 4. ​petA (Cytochrome b6/f complex): petA codes for cytochrome f, part of the cytochrome b6/f complex, which transfers electrons between PSII and PSI.
+   - **4. ​petA (Cytochrome b6/f complex)**: petA codes for cytochrome f, part of the cytochrome b6/f complex, which transfers electrons between PSII and PSI.
         
-   - 5. ​rbcL (Carbon Fixation): rbcL codes for the large subunit of Rubisco, the enzyme that fixes CO2 in the Calvin cycle.
+   - **5. ​rbcL (Carbon Fixation):** rbcL codes for the large subunit of Rubisco, the enzyme that fixes CO2 in the Calvin cycle.
         
-   - 6. ​ndhF (NADH Dehydrogenase): ndhF codes for a subunit of the NADH dehydrogenase-like complex, which takes part in cyclic electron flow around Photosystem I.
+   - **6. ​ndhF (NADH Dehydrogenase):** ndhF codes for a subunit of the NADH dehydrogenase-like complex, which takes part in cyclic electron flow around Photosystem I.
         
-   - 7. rpoB (RNA Polymerase): Encodes the beta subunit of plastid-encoded RNA polymerase (PEP) for gene transcription.
+   - **7. rpoB (RNA Polymerase):** Encodes the beta subunit of plastid-encoded RNA polymerase (PEP) for gene transcription.
         
-   - 8. rps12 (Ribosomal Small Subunit): Encodes ribosomal protein S12 required for plastid protein translation. It also trans-spliced
+   - **8. rps12 (Ribosomal Small Subunit):** Encodes ribosomal protein S12 required for plastid protein translation. It also trans-spliced
 
   7. The rRNA genes are rrn16, rrn23, rrn4.5, and rrn5, and they sit in the IR, so there are two copies of each. For tRNAs, trnK-UUU carries lysine and has an intron that contains matK. trnL-UAA carries leucine, and its intron is a group I intron. Two genes with introns are clpP and ycf3, which have two introns each. rps12 is trans-spliced, with its first exon in the LSC and the other exons in the IR.
 
@@ -170,6 +171,7 @@
  Differences:
 
   The five differences:
+  
     - Plastids do photosynthesis/Carbon fixation, and mitochondria do respiration/ATP synthesis.
     - Plastomes are small and similar in size across plants (about 120–170 kb), while plant mitochondrial genomes range from about 200 kb to several Mb.
     - Plastomes have a single circular map with quadripartite LSC–IR–SSC–IR layout, while mitochondrial genomes are often a dynamic master circle with subgenomic linear/circular forms.
@@ -193,7 +195,9 @@ The limitations are that:
   - A plastome tree can disagree with the species tree if there has been hybridization or chloroplast capture.
 
 Research Question Examples
- Plastid data: Where does Ginkgo biloba fall among the living seed plants? Plastid genes are conserved enough to align across very distant groups, so a plastome is a useful starting point for this kind of question.
+
+Plastid data: Where does Ginkgo biloba fall among the living seed plants? Plastid genes are conserved enough to align across very distant groups, so a plastome is a useful starting point for this kind of question.
+
  Nuclear data: Do Ginkgo populations from warmer or wetter areas differ genetically from those in cooler or drier areas? Nuclear SNPs from many genes can show population structure and possible local adaptation. The plastome can't, since it is inherited from one parent and acts as a single locus.
 
  ### 10. Plastid vs Mitochondrial Genome Comparison
