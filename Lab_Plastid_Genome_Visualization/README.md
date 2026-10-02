@@ -1,12 +1,20 @@
 # Visualize Plastid Genome Structure
 
 **Student:** Jade Angela Suan  
+
 **Course:** Cell & Molecular Biology  
+
 **Plant:** *Ginkgo biloba* (maidenhair tree)
+
 **Family:** Ginkgoaceae  
+
 **NCBI accession:** MN443423.1  
+
 **Plastid genome length:** 156,990 bp  
+
 **Software used:** OGDRAW (OrganellarGenomeDRAW)
+
+**Github repository:** https://github.com/Jayeydd/cmb-plastid-genome-Ginkgo-Suan/tree/main/Lab_Plastid_Genome_Visualization
 
 In this lab I made a circular map of the *Ginkgo biloba* plastid genome that I characterized in the earlier plastid genome activity, and I used it to look at the genome's regions, genes and GC content. It is the same genome, MN443423.1, throughout.
 
